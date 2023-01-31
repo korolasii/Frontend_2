@@ -1,0 +1,12 @@
+
+.logo:hover{
+    text-decoration: none;
+}
+
+.position-sticky{
+    top: 2rem;
+}
+
+.tabel{
+    width: 100%;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_3.css">
+</head>
+<body>
+    <form>
+        <div class="header">
+            <h1 class="header_h1">
+                Форма заполнения
+            </h1>
+        </div>
+        <div class="content">
+            <label for="name">
+                Имя:
+            </label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="content">
+            <label for="email">
+                Почта:
+            </label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div class="content">
+            <label for="password">
+                Пароль:
+            </label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="content">
+            <label for="data">
+                Дата:
+            </label>
+            <input type="datetime-local" id="data" name="dat">
+        </div>
+        <div class="content">
+            <label for="color">
+                Цвет:
+            </label>
+          <input type="color" id="color" name="color">  
+        </div>
+        <div class="content select">
+            <label for="car">
+                Выберите машину:
+            </label>
+            <select name="car" id="car">
+                <option value="BMW">
+                    BMW
+                </option>
+                <option value="Toyota">
+                    Toyota
+                </option>
+                <option value="Nisan">
+                    Nisan
+                </option>
+                <option value="Reno">
+                    Reno
+                </option>
+                <option value="Skoda">
+                    Skoda
+                </option>
+            </select>
+        </div>
+        <div class="content">
+            <label for="age">
+                Возраст:
+            </label>
+            <input type="number" min="0" max="100">
+        </div>
+        <div class="content">
+            <label for="sex">
+                Гендер:
+            </label>
+            <input type="radio" checked id="men" name="sex"> Чоловік
+            <input type="radio" id="women" name="sex"> Жінка
+        </div>
+        <div class="content">
+            <label for="keen_on">
+                Хоби:
+            </label>
+            <input type="checkbox" id="keen_on"> Футбол   
+            <input type="checkbox" id="keen_on"> Баскетбол   
+            <input type="checkbox" id="keen_on"> Волейбол
+        </div>
+        <div class="content">
+            <label for="phone">
+                Номер телефона:
+            </label>
+            +38 <input type="tel" placeholder="(XXX)-XXX-XX-XX" id="phone" name="phone">
+        </div>
+        <div class="content" >
+            <label for="price">
+                Цена:
+            </label>
+            1 <input type="range" step="1" min="1" max="1000" value="1" id="price" name="price"> 1000
+        </div>
+        <div class="conten btn">
+            <input type="submit" id="submit">
+            <input type="reset" id="reset">
+        </div>
+    </form>
+</body>
+</html>

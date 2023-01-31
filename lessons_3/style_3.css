@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body{
+    background-color: gray;
+}
+
+form{
+    width: 540px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 25px;
+    padding: 0 0 10px 0;
+}
+
+div{
+    margin-bottom: 10px;
+}
+
+.header{
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px 25px 0 0;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.header_h1{
+    display: inline;
+    font-size: 30px;
+}
+
+.content{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.select{
+    display: block;
+}
+
+input{
+    background-color: white;
+    border-radius: 15px;
+    height: 30px;
+    padding: 0 20px;
+}
+
+#name, #email, #password, #data{
+    width: 250px;
+}
+
+#name{
+    margin-left: 26px;
+}
+
+#email{
+    margin-left: 10px;
+}
+
+#data{
+    margin-left: 24px;
+}
+
+#color{
+    width: 292px;
+    height: 30px;
+    margin-left: 25px;
+}
+
+#car{
+    height: 30px;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+#keen_on, #men, #women {
+    margin-top: 9px;
+    margin-left: 15px;
+    height: 13px;
+}
+
+#tel{
+    width: 170px;
+}
+
+
+#price{
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 23px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 30px;
+}
+
+#submit, #reset{
+    height: 50px;
+    font-size: 30px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+#reset{
+    margin-left: 45px;
+}
