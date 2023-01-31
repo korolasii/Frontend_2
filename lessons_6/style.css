@@ -20,10 +20,13 @@ header{
     width: 100%;
     background-color: #242424;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
+    height: 200px;
+    background: #050505;
 }
 
-img{
+.logo{
+    display: none;
     width: 126px;
     height: 50px;
 }
@@ -99,6 +102,7 @@ img{
     flex-direction: column;
     background: #242424;
     width: 20%;
+    border-radius: 17px;
     box-shadow: -14px -12px 9px 1px rgba(47, 51, 56, 1);
 }
 
@@ -108,7 +112,7 @@ img{
     justify-content: center;
 }
 
-.age_text,.about_our h2 ,.steps h2, .heade_arive>h2{
+.age_text,.about_our h2 ,.steps h2, .header_arive h2{
     color: #d49a5a;
 }
 
@@ -128,7 +132,7 @@ img{
 
 .step_1, .step_2, .step_3, .step_4, .step_5{
     background: #242424;
-    width: 150px;
+    width: 18%;
     height: 400px;
 }
 
@@ -154,6 +158,43 @@ img{
 
 .arive_p, .plane, .sea{
     color: black;
+}
+
+.arive{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_arive{
+    width: 488px;
+}
+
+.body_arive{
+    width: 45%;
+}
+
+.plane_arive, .sea_arive{
+    margin-top: 20px;
+    background-color: #e5e5e5;
+    background-image: url('https://easyxpress.com.ua/img/avia-bg.png');
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 219px;
+    padding: 30px;
+    position: relative;
+}
+
+.plane_conteiner, .sea_conteiner{
+    margin-top: 20px;
+    display: flex;
+    font-display: column;
+    justify-content: space-between;
+}
+
+.plane_conteiner_content, .sea_conteiner_content{
+    font-size: large;
 }
 
 .sidebar{
