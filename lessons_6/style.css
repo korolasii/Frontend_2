@@ -403,8 +403,18 @@ footer {
 
     .step_1, .step_2, .step_3, .step_4, .step_5{
         width: 100%;
+        padding: 0;
         margin-bottom: 20px;
     }
+
+    .step_1 h2, .step_2 h2, .step_3 h2, .step_4 h2, .step_5 h2{
+        padding: 10px 0 0 10px ;
+    }
+    
+    .step_1 div, .step_2 div, .step_3 div, .step_4 div, .step_5 div{
+        padding: 10px 0 20px 10px ;
+    }
+    
 
     .arive{
         flex-direction: column;
