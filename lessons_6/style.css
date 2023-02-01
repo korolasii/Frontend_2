@@ -9,6 +9,12 @@ body {
     height: 100vh;
 }
 
+h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
 .pai{
     display: flex;
     flex-direction: column;
@@ -20,9 +26,35 @@ header{
     width: 100%;
     background-color: #242424;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-between;
+    align-items: center;
     height: 200px;
     background: #050505;
+}
+
+.slogo{
+    padding-left: 20px;
+    color: white;
+    z-index: 3;
+    font-weight: bolder;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.usa{
+    color: #9cd1f9;
+}
+
+.online{
+    color: #ffbf68;
+}
+
+.shopping{
+    color: #99d86d;
+}
+
+.world{
+    z-index: 2;
 }
 
 .logo{
@@ -46,7 +78,7 @@ header{
     display: none;
     position: absolute;
     right: 20px;
-    background-color: #f1f1f1;
+    background-color: rgba(250, 250, 250, 0.8);
     width: 100px;
     z-index: 1;
 }
@@ -59,7 +91,7 @@ header{
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: rgba(187, 187, 187, 0.932);
 }
 
 .dropdown:hover .dropdown-content {
@@ -73,22 +105,29 @@ header{
 }
 
 .navigation{
-    flex: 0 0 100px;
+    flex: 0 0 200px;
     background: #454545;
 }
 
 .navigation_menu{
     position: sticky;
     top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
-.ul{
-    display: inline-block;
+.navigation_menu a {
+    margin-bottom: 30px;
+    color: #d49a5a;
 }
 
 .content{
     flex: 1 1 auto;
     background: #f2f2f2;
+    padding: 20px;
 }
 
 .show{
@@ -100,16 +139,21 @@ header{
 .age, .klient_reaction, .klient, .pos{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background: #242424;
     width: 20%;
-    border-radius: 17px;
-    box-shadow: -14px -12px 9px 1px rgba(47, 51, 56, 1);
+    border-radius: 5px;
+    box-shadow: 14px -12px 9px 1px rgba(47, 51, 56, 1);
+    padding: 15px 0;
 }
 
 .our{
     color: #d49a5a;
     display: flex;
     justify-content: center;
+    font-size: 25px;
+    text-align: center;
+    height: auto;
 }
 
 .age_text,.about_our h2 ,.steps h2, .header_arive h2{
@@ -118,42 +162,41 @@ header{
 
 .about_our{
     color: black;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.steps{
+    margin-bottom: 20px;
 }
 
 .steps p{
     color: black;
+    margin-bottom: 40px;
 }
 
 .conteiner_step{
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 0 15px;
 }
 
 .step_1, .step_2, .step_3, .step_4, .step_5{
     background: #242424;
-    width: 18%;
-    height: 400px;
+    width: 15%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 14px -12px 9px 1px rgba(47, 51, 56, 1);
 }
 
-.step_1{
-    
+.step_1 h2, .step_2 h2, .step_3 h2, .step_4 h2, .step_5 h2{
+    font-size: 40px;
 }
 
-.step_2{
-    background:blue;
-}
-
-.step_3{
-
-}
-
-.step_4{
-    background: blue;
-}
-
-.step_5{
-    
+.step_1 div, .step_2 div, .step_3 div, .step_4 div, .step_5 div{
+    padding: 20px 0;
+    font-size: 20px;
 }
 
 .arive_p, .plane, .sea{
@@ -172,6 +215,10 @@ header{
 
 .body_arive{
     width: 45%;
+}
+
+.sea, .plane{
+    padding: 0;
 }
 
 .plane_arive, .sea_arive{
@@ -195,10 +242,11 @@ header{
 
 .plane_conteiner_content, .sea_conteiner_content{
     font-size: large;
+    width: 30%;
 }
 
 .sidebar{
-    flex: 0 0 100px;
+    flex: 0 0 200px;
     background: #454545;
 }
 
@@ -206,7 +254,6 @@ footer {
     font-style: italic;
     height: 100px;
     background-color: #242424;
-    min-width: 640px;
     color: white;
 }
 
@@ -234,10 +281,16 @@ footer {
 .geo{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.geo_items{
-    display: flex;
+.location{
+    margin-bottom: 5px;
+}
+
+.geo_iteams{
+    margin-top: 5px;
 }
 
 .gis,
@@ -246,9 +299,63 @@ footer {
     height: 30px;
 }
 
+.page{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.viber{
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.telegram{
+    width: 35px;
+    height: 32px;
+}
+
+.p{
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media (max-width: 1350px){
+    .conteiner{
+        flex-direction: column;
+    }
+
+    .navigation{
+        position: sticky;
+        height: auto;
+        flex: 0 0 50px;
+    }
+
+    .navigation_menu{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .navigation_menu a{
+        margin: 0;
+    }
+}
+
 @media (max-width: 540px) {
+
     header{
-        justify-content: space-between;
+        height: auto;
+    }
+
+    .logo{
+        display: block;
+    }
+
+    .world{
+        display: none;
     }
 
     .dropdown{

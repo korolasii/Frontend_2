@@ -11,15 +11,30 @@
 <body>
     <div class="pai">
         <header>
-            <img src="https://i.postimg.cc/ZTRptY3r/logo-flag.jpg" class="logo">
-            <img src="img/world.jpg" class="world">
+            <div class="slogo">
+                <div class="usa">USA</div>
+                <div class="online">ON-LINE</div>
+                <div class="shopping">SHOPPING</div>
+            </div>
+            <div class="logo_conteiner">
+                <img src="https://i.postimg.cc/ZTRptY3r/logo-flag.jpg" class="logo">
+                <img src="img/world.jpg" class="world">
+            </div>
             <div class="dropdown">
                 <button class="dropbtn"><i class="bi bi-list"></i></button>
                 <div class="dropdown-content">
-                    <a href="#show">О нас</a>
-                    <a href="#steps">Как мы работаем</a>
-                    <a href='#arive'>Доставка</a>
-                    <a href="#shop">Магазины</a>
+                    <div class="div_about div">
+                        <a href="#show">О нас</a>
+                    </div>
+                    <div class="div_work div">
+                        <a href="#steps">Как мы работаем</a>
+                    </div>
+                    <div class="div_arive div">
+                        <a href='#arive'>Доставка</a>
+                    </div>
+                    <div class="div_show div">
+                        <a href="#shop">Магазины</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -34,7 +49,7 @@
             </div>
             <div class="content">
                 <div class="show" id="show">
-                    <div class="age">
+                    <div class="age cont">
                         <div class="age_item our">
                             12 лет
                         </div>
@@ -42,7 +57,7 @@
                             на рынке
                         </div>
                     </div>
-                    <div class="klient_reaction">
+                    <div class="klient_reaction cont">
                         <div class="klient_procet our">
                             100%
                         </div>
@@ -50,7 +65,7 @@
                             довольных клиентов
                         </div>
                     </div>
-                    <div class="klient">
+                    <div class="klient cont">
                         <div class="klient_kol our">
                             > 1000
                         </div>
@@ -58,9 +73,9 @@
                             клиентов
                         </div>
                     </div>
-                    <div class="pos">
+                    <div class="pos cont">
                         <div class="pos_kol our">
-                            > 100000
+                            > 100 000
                         </div>
                         <div class="pos_text our">
                             доставленых коробок
@@ -71,35 +86,51 @@
                     <h2>
                         О нас
                     </h2>
-
-                    Предпочитаете делать покупки в online-магазинах? Вероятно, вы знаете, насколько важно, чтобы доставка товаров и грузов
-                    из США в Украину проходила максимально оперативно, безопасно и по выгодным тарифам. Если же вы еще никогда и ничего не
-                    приобретали в онлайн-магазинах США, у вас есть прекрасная возможность окунуться в мир американского шоппинга посредством
-                    интернета. Ну а для тех, кто уже оценил все его преимущества, предоставляется великолепная возможность делать это еще и
-                    выгодно вместе с компанией USA-online shopping!
+                    <p class="p">
+                        Предпочитаете делать покупки в online-магазинах? Вероятно, вы знаете, насколько важно, чтобы    доставка товаров и грузов
+                        из США в Украину проходила максимально оперативно, безопасно и по выгодным тарифам. Если же вы еще никогда и ничего не
+                        приобретали в онлайн-магазинах США, у вас есть прекрасная возможность окунуться в мир американского шоппинга посредством
+                        интернета. Ну а для тех, кто уже оценил все его преимущества, предоставляется великолепная возможность делать это еще и
+                        выгодно вместе с компанией USA-online shopping!
+                    </p>
                 </div>
                 <div class="steps" id="steps">
                     <h2>
                         Как мы работаем
                     </h2>
-                    <p>
+                    <p class="p">
                         Всего пять простых шагов
                     </p>
                     <div class="conteiner_step">
                         <div class="step_1">
-                            Шаг 1
+                            <h2>Шаг 1</h2>
+                            <div>
+                                Вібрать товар на любом сайте США или Европа
+                            </div>
                         </div>
                         <div class="step_2">
-                            Шаг 2
+                            <h2>Шаг 2</h2>
+                            <div>
+                                Отправить на почту ссылку 
+                            </div>
                         </div>
                         <div class="step_3">
-                            Шаг 3
+                            <h2>Шаг 3</h2>
+                            <div>
+                                Получить письмо с росчетам заказа
+                            </div>
                         </div>
                         <div class="step_4">
-                            Шаг 4
+                            <h2>Шаг 4</h2>
+                            <div>
+                                Оплатить заказ
+                            </div>
                         </div>
                         <div class="step_5">
-                            Шаг 5
+                            <h2>Шаг 5</h2> 
+                            <div>
+                                Получить товар у нас в офисе или с помощью Новой Почтой
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -108,7 +139,7 @@
                         <h2>
                             Стоимость и сроки доставки
                         </h2>
-                        <p class="arive_p">
+                        <p class="arive_p p">
                             Мы оптимизировали наши бизнес-процессы, чтобы снизить стоимость услуг, при этом сохранив высокое качество сервиса.
                             Получив ваш заказ, мы отслеживаем и контролируем его доставку. Мы подскажем вам, как минимизировать расходы по оплате
                             посылки, а также проследим, чтобы ее вес и стоимость не превышали таможенного лимита.
@@ -181,7 +212,7 @@
                     </div>
                 </div>
                 <div class="geo">
-                    <div class="page">
+                    <div class="location">
                         Площадь 10-го апреля 1, 2 этаж 5 кабинет
                     </div>
                     <div class="geo_iteams">
