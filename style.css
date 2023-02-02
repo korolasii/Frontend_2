@@ -1,552 +1,127 @@
 *{
     margin: 0;
-    padding: 0;
     color: white;
-    text-decoration: none;
+    box-sizing: border-box;
 }
 
-body {
+body{
     height: 100vh;
-    min-width: 400px;
+    min-width: 900px;
+    background: linear-gradient(315deg, #246488 35%, #1B201EDB 65%);
 }
 
-h2{
-    font-size: 40px;
-    padding-bottom: 20px;
-    padding-top: 40px;
-}
-
-.pai{
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-header{
-    display: flex;
-    width: 100%;
-    background-color: #242424;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 200px;
-    background: #050505;
-}
-
-.slogo{
-    padding-left: 20px;
-    color: white;
-    z-index: 3;
-    font-weight: bolder;
-    font-size: 50px;
-    letter-spacing: 3px;
-}
-
-.usa{
-    color: #9cd1f9;
-}
-
-.online{
-    color: #ffbf68;
-}
-
-.shopping{
-    color: #99d86d;
-}
-
-.world{
-    z-index: 2;
-}
-
-.logo{
-    display: none;
-    width: 126px;
-    height: 50px;
-}
-
-.dropdown {
-    position: relative;
-    display: none;
-}
-
-.dropbtn {
-    background-color: black;
-    padding: 16px;
-    border: none;
-}
-
-.bi-list{
-    font-size: 25px;
-}
-
-.dropdown-content {
-    display: none;
+.grid_conteiner{
+    height: 500px;
+    width: 890px;
     position: absolute;
-    right: 20px;
-    background-color: rgba(250, 250, 250, 0.8);
-    width: 100px;
-    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 50px 50px 315px 100px 300px;
+    grid-template-rows: 100px 1fr 50px;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: rgba(187, 187, 187, 0.932);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.conteiner{
-    display: flex;
-    justify-content: space-between;
-    flex: 1 1 auto;
-}
-
-.navigation{
-    flex: 0 0 200px;
-    background: #454545;
-}
-
-.navigation_menu{
-    position: sticky;
-    top: 10px;
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.navigation_menu a {
-    margin-bottom: 30px;
-    color: #d49a5a;
-}
-
-.content{
-    flex: 1 1 auto;
-    background: #f2f2f2;
-    padding: 20px;
-}
-
-.show{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.age, .klient_reaction, .klient, .pos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #242424;
-    width: 20%;
-    border-radius: 5px;
-    box-shadow: 14px -12px 9px 1px rgba(47, 51, 56, 1);
-    padding: 15px 0;
-}
-
-.our{
-    color: #d49a5a;
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    text-align: center;
-    height: auto;
-}
-
-.age_text,.about_our h2 ,.steps h2, .header_arive h2{
-    color: #d49a5a;
-}
-
-.about_our{
-    color: black;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.steps{
-    margin-bottom: 20px;
-}
-
-.steps p{
-    color: black;
-    margin-bottom: 40px;
-}
-
-.conteiner_step{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 15px;
-}
-
-.step_1, .step_2, .step_3, .step_4, .step_5{
-    background: #242424;
-    width: 15%;
-    height: auto;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 14px -12px 9px 1px rgba(47, 51, 56, 1);
-}
-
-.step_1 h2, .step_2 h2, .step_3 h2, .step_4 h2, .step_5 h2{
+.grid_item_h{
+    order: -2;
+    grid-column-start: 1;
+    grid-column-end: 4;
     font-size: 40px;
+    font-weight: bold;
+    padding-top: 50px;
 }
 
-.step_1 div, .step_2 div, .step_3 div, .step_4 div, .step_5 div{
-    padding: 20px 0;
+.grid_item_colum{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    visibility: hidden;
+}
+
+.grid_item_text{
+    grid-column-start: 1;
+    grid-column-end: 4;
     font-size: 20px;
 }
 
-.arive_p, .plane, .sea{
-    color: black;
-}
-
-.arive{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.body_arive{
-    width: 45%;
-}
-
-.sea, .plane{
-    padding: 0;
-}
-
-.plane_arive, .sea_arive{
-    margin-top: 20px;
-    background-color: #e5e5e5;
-    background-image: url('https://easyxpress.com.ua/img/avia-bg.png');
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-    background-size: 219px;
-    padding: 30px;
-    position: relative;
-}
-
-.plane_conteiner, .sea_conteiner{
-    margin-top: 20px;
-    display: flex;
-    font-display: column;
-    justify-content: space-between;
-}
-
-.plane_conteiner_content, .sea_conteiner_content{
-    font-size: large;
-    width: 30%;
-}
-
-.sidebar{
-    flex: 0 0 200px;
-    background: #454545;
-}
-
-.sidebar h2 {
-    text-align: center;
-    color: #d49a5a;
-    margin-bottom: 20px;
-}
-
-.otz_1,
-.otz_2 {
-    display: flex;
-    background-color: #242424;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    border-radius: 5px;
-}
-
-.avatar img {
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.name {
-    padding-left: 10px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.text {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-}
-
-footer {
-    font-style: italic;
-    height: 100px;
-    background-color: #242424;
-    color: white;
-}
-
-.footer_flex{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-}
-
-.contacte_infomation{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.phone{
-    margin-bottom: 5px;
-}
-
-.emeil{
-    margin-top: 5px;
-}
-
-.geo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.location{
-    margin-bottom: 5px;
-}
-
-.geo_iteams{
-    margin-top: 5px;
-}
-
-.gis,
-.google_map {
-    width: 30px;
-    height: 30px;
-}
-
-.page{
-    display: flex;
-    align-items: center;
-    height: 100%;
+.grid_item_text p{
+    margin-bottom: 15px;
 }
 
 .viber{
-    width: 35px;
-    height: 35px;
-    padding-left: 10px;
+    width: 50px;
+    height: 50px;
 }
 
 .telegram{
-    width: 35px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
 }
 
-.p{
-    color: black;
+.grid_item_block{
+    order: -1;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-radius: 20px;
+    background: radial-gradient(#16517BB0 10%, #1E1A36 100%);
+    box-shadow: 20px 17px 13px 2px rgb(4 44 82);
+}
+
+form{
+    height: 100%;
+}
+
+.grid_form{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(7, 1fr);
+    justify-content: center;
+}
+
+input{
+    width: 240px;
+    height: 40px;
+    border-radius: 5px;
+    background: #DFDADA;
     font-size: 20px;
-    text-align: justify;
+    color: black;
+    padding: 0 5px;
+    margin-top: 5px;
 }
 
-@media (max-width: 1350px){
-    .conteiner{
-        flex-direction: column;
-    }
-
-    .navigation{
-        position: sticky;
-        height: auto;
-        flex: 0 0 50px;
-    }
-
-    .navigation_menu{
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 10px 0;
-    }
-
-    .navigation_menu a{
-        margin: 0;
-    }
-
-    .sidebar h2 {
-        text-align: center;
-        color: #d49a5a;
-        margin-bottom: 20px;
-    }
-
-    .otz_1,
-    .otz_2 {
-        display: flex;
-        background-color: #242424;
-        flex-direction: row;
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 40px;
-        border-radius: 5px;
-    }
-
-    .avatar img {
-        padding: 10px;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-    }
-
-    .name {
-        padding-left: 10px;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .text {
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-    }
+.h2{
+    text-align: center;
+    padding-top: 30px;
 }
 
-@media (max-width: 1085px) {
+.nom_phone{
+    font-size: 20px;
+}
 
-    header{
-        z-index: 1000;
-        position: fixed;
-        height: auto;
-    }
+#phone{
+    width: 203px;
+}
 
-    .logo{
-        padding: 5px;
-        display: block;
-    }
+#sogl{
+    width: 10px;
+    height: 10px;
+}
 
-    .world{
-        display: none;
-    }
+.btn{
+    text-align: center;
+}
 
-    .slogo{
-        display: none;
-    }
-
-    .dropdown{
-        display: inline-block;
-    }
-
-    .conteiner{
-        margin-top: 60px;
-        flex-direction: column;
-    }
-
-    .navigation{
-        display: none;
-    }
-
-    .content{
-        padding: 40px;
-    }
-
-    .show{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cont{
-        width: 100%;
-        margin-bottom: 65px;
-        padding: 30px 0;
-    }
-
-    .pos{
-        margin: 0;
-    }
-
-    .conteiner_step{
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .step_1, .step_2, .step_3, .step_4, .step_5{
-        width: 100%;
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    .step_1 h2, .step_2 h2, .step_3 h2, .step_4 h2, .step_5 h2{
-        padding: 10px 0 0 10px ;
-    }
-    
-    .step_1 div, .step_2 div, .step_3 div, .step_4 div, .step_5 div{
-        padding: 10px 0 20px 10px ;
-    }
-    
-
-    .arive{
-        flex-direction: column;
-    }
-
-    .body_arive{
-        width: 100%;
-    }
-
-    .arive_content{
-        width: 100%;
-        justify-content: left;
-    }
-
-    .sidebar{
-        flex: 1 1 auto;
-    }
-
-    .sidebar h2 {
-        text-align: center;
-        color: #d49a5a;
-        margin-bottom: 20px;
-    }
-
-    .otz_1,
-    .otz_2 {
-        display: flex;
-        background-color: #242424;
-        flex-direction: row;
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 40px;
-        border-radius: 5px;
-    }
-
-    .avatar img {
-        padding: 10px;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-    }
-
-    .name {
-        padding-left: 10px;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .text {
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-    }
-
+button{
+    height: 40px;
+    font-size: 20px;
+    color: black;
+    background: #DFDADA;
+    border-radius: 5px;
+    border-color: #DFDADA;
 }
