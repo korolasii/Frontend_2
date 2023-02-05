@@ -42,6 +42,14 @@ body {
 }
 .prev header .cont {
   background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d49a5a;
+}
+.prev header .cont .our {
+  font-size: 25px;
 }
 .prev header .logo_picture {
   grid-row-start: 1;

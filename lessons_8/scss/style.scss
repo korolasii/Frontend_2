@@ -41,6 +41,14 @@ body{
         }
         .cont{
             background: $bg-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $color-h1;
+            .our{
+                font-size: $size-our;
+            }
         }
         .logo_picture{
             grid-row-start: 1;
