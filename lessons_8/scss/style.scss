@@ -81,11 +81,56 @@ body{
         background: $bg-header;
         height: $height-footer;
         font-style: italic;
-        .contacte_infomation{
+        .footer_flex{
             display: flex;
             width: $width-pol;
             height: $height-pol;
             justify-content: space-between;
+            .contacte_infomation{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .phone{
+                    margin-bottom: $m-1;
+                    color: $color-none;
+                }
+                .emeil{
+                    margin-top: $m-1;
+                    color: $color-none;
+                }
+            }
+            .geo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .location{
+                    margin-bottom: $m-1;
+                    color: $color-none;
+                }
+                .geo_iteams{
+                    margin-top: $m-1;
+                }
+                .gis,
+                .google_map {
+                    width: $width-geo;
+                    height: $height-geo;
+                }
+            }
+            .page{
+                display: flex;
+                align-items: center;
+                height: $height-pol;
+                .viber{
+                    width: 35px;
+                    height: 35px;
+                    padding-left: $m-1;
+                }
+                .telegram{
+                    width: 35px;
+                    height: 32px;
+                }
+            }
         }
     }
 }

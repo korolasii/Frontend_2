@@ -81,4 +81,55 @@ body {
   background: #050505;
   height: 100px;
   font-style: italic;
+}
+.prev footer .footer_flex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.prev footer .footer_flex .contacte_infomation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.prev footer .footer_flex .contacte_infomation .phone {
+  margin-bottom: 10px;
+  color: white;
+}
+.prev footer .footer_flex .contacte_infomation .emeil {
+  margin-top: 10px;
+  color: white;
+}
+.prev footer .footer_flex .geo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.prev footer .footer_flex .geo .location {
+  margin-bottom: 10px;
+  color: white;
+}
+.prev footer .footer_flex .geo .geo_iteams {
+  margin-top: 10px;
+}
+.prev footer .footer_flex .geo .gis,
+.prev footer .footer_flex .geo .google_map {
+  width: 30px;
+  height: 30px;
+}
+.prev footer .footer_flex .page {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.prev footer .footer_flex .page .viber {
+  width: 35px;
+  height: 35px;
+  padding-left: 10px;
+}
+.prev footer .footer_flex .page .telegram {
+  width: 35px;
+  height: 32px;
 }/*# sourceMappingURL=style.css.map */
