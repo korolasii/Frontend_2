@@ -79,6 +79,13 @@ body{
     }
     footer{
         background: $bg-header;
-        height: 50px;
+        height: $height-footer;
+        font-style: italic;
+        .contacte_infomation{
+            display: flex;
+            width: $width-pol;
+            height: $height-pol;
+            justify-content: space-between;
+        }
     }
 }

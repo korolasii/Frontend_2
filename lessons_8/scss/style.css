@@ -79,5 +79,6 @@ body {
 }
 .prev footer {
   background: #050505;
-  height: 50px;
+  height: 100px;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */
