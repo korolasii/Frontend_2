@@ -1,135 +1,265 @@
 * {
   margin: 0px;
   padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   height: 100vh;
 }
 
+h2 {
+  color: #d49a5a;
+}
+
 .prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
 }
+
 .prev header {
   height: 200px;
   background: #050505;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 75px 75px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 75px 75px;
+      grid-template-rows: 75px 75px;
   row-gap: 10px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
   padding-top: 20px;
 }
+
 .prev header .logo {
   padding-left: 20px;
   font-weight: bolder;
   font-size: 50px;
   letter-spacing: 3px;
-  grid-row-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
   grid-row-end: 3;
 }
+
 .prev header .logo .usa {
   color: #9cd1f9;
 }
+
 .prev header .logo .online {
   color: #ffbf68;
 }
+
 .prev header .logo .shopping {
   color: #99d86d;
 }
+
 .prev header .cont {
   background: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #d49a5a;
 }
+
 .prev header .cont .our {
   font-size: 25px;
 }
+
 .prev header .logo_picture {
-  grid-row-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
   grid-row-end: 3;
-  grid-column-start: 4;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
   grid-column-end: 5;
 }
+
 .prev .content {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .prev .content .navigation {
-  flex: 0 0 200px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
   background: #050505;
 }
+
 .prev .content .navigation .navigation_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .prev .content .navigation .navigation_menu a {
   color: white;
   text-decoration: none;
 }
+
 .prev .content .body_content {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   background: #f2f2f2;
+  padding: 20px;
 }
+
+.prev .content .body_content #show {
+  margin-bottom: 20px;
+}
+
+.prev .content .body_content #show p {
+  text-align: justify;
+}
+
+.prev .content .body_content #steps p {
+  margin-bottom: 20px;
+}
+
+.prev .content .body_content #steps .conteiner_step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 10px;
+}
+
+.prev .content .body_content #steps .conteiner_step div {
+  background: #242424;
+  width: 15%;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 14px -12px 9px 1px #2f3338;
+          box-shadow: 14px -12px 9px 1px #2f3338;
+}
+
+.prev .content .body_content #steps .conteiner_step div h2 {
+  font-size: 40px;
+}
+
+.prev .content .body_content #steps .conteiner_step div div {
+  padding: 20px 0px;
+  font-size: 20px;
+}
+
 .prev footer {
   background: #050505;
   height: 100px;
   font-style: italic;
 }
+
 .prev footer .footer_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .prev footer .footer_flex .contacte_infomation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .prev footer .footer_flex .contacte_infomation .phone {
   margin-bottom: 10px;
   color: white;
 }
+
 .prev footer .footer_flex .contacte_infomation .emeil {
   margin-top: 10px;
   color: white;
 }
+
 .prev footer .footer_flex .geo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .prev footer .footer_flex .geo .location {
   margin-bottom: 10px;
   color: white;
 }
+
 .prev footer .footer_flex .geo .geo_iteams {
   margin-top: 10px;
 }
+
 .prev footer .footer_flex .geo .gis,
 .prev footer .footer_flex .geo .google_map {
   width: 30px;
   height: 30px;
 }
+
 .prev footer .footer_flex .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
+
 .prev footer .footer_flex .page .viber {
   width: 35px;
   height: 35px;
   padding-left: 10px;
 }
+
 .prev footer .footer_flex .page .telegram {
   width: 35px;
   height: 32px;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

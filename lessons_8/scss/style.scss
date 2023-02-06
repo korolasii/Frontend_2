@@ -3,10 +3,15 @@
 *{
     margin: $m-0;
     padding: $p-0;
+    box-sizing: border-box;
 }
 
 body{
     height: $height-display;
+}
+
+h2{
+    color: $color-h2;
 }
 
 .prev{
@@ -45,7 +50,7 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: $color-h1;
+            color: $color-h2;
             .our{
                 font-size: $size-our;
             }
@@ -75,6 +80,39 @@ body{
         .body_content{
             flex: 1 1 auto;
             background: $bg-content;
+            padding: $p-2;
+            #show{
+                margin-bottom: $m-2;
+                p{
+                    text-align: justify;
+                }
+            }
+            #steps{
+                p{
+                    margin-bottom: $m-2;
+                }
+                .conteiner_step{
+                    display: flex;
+                    justify-content: space-around;
+                    margin: $m-0 $m-1;
+                    div{
+                        background: #242424;
+                        width: 15%;
+                        height: $height-auto;
+                        padding: $p-1;
+                        border-radius: 5px;
+                        box-shadow: 14px -12px 9px 1px rgba(47, 51, 56, 1);
+                        h2{
+                            font-size: $size-step-h2;
+                        }
+                        div{
+                            padding: $p-2 $p-0;
+                            font-size: $size-step-text;
+                        }
+
+                    }
+                }
+            }
         }
     }
     footer{
