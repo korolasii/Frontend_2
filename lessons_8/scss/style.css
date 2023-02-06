@@ -169,6 +169,55 @@ h2 {
 .prev .content .body_content #steps .conteiner_step div div {
   padding: 20px 0px;
   font-size: 20px;
+  color: white;
+}
+
+.prev .content .body_content .arive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prev .content .body_content .arive .body_arive {
+  width: 45%;
+}
+
+.prev .content .body_content .arive .body_arive .arive_content .plane_arive, .prev .content .body_content .arive .body_arive .arive_content .sea_arive {
+  margin-top: 20px;
+  background-color: #e5e5e5;
+  background-image: url("https://easyxpress.com.ua/img/avia-bg.png");
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 200px;
+  padding: 30px;
+  position: relative;
+}
+
+.prev .content .body_content .arive .body_arive .arive_content .plane_arive h2, .prev .content .body_content .arive .body_arive .arive_content .sea_arive h2 {
+  color: black;
+  padding: 0px;
+}
+
+.prev .content .body_content .arive .body_arive .arive_content .plane_arive .plane_conteiner, .prev .content .body_content .arive .body_arive .arive_content .plane_arive .sea_conteiner, .prev .content .body_content .arive .body_arive .arive_content .sea_arive .plane_conteiner, .prev .content .body_content .arive .body_arive .arive_content .sea_arive .sea_conteiner {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-display: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prev .content .body_content .arive .body_arive .arive_content .plane_arive .plane_conteiner .plane_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .plane_arive .plane_conteiner .sea_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .plane_arive .sea_conteiner .plane_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .plane_arive .sea_conteiner .sea_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .sea_arive .plane_conteiner .plane_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .sea_arive .plane_conteiner .sea_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .sea_arive .sea_conteiner .plane_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .sea_arive .sea_conteiner .sea_conteiner_content {
+  font-size: large;
+  width: 30%;
 }
 
 .prev footer {

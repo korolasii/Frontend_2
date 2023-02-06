@@ -108,8 +108,44 @@ h2{
                         div{
                             padding: $p-2 $p-0;
                             font-size: $size-step-text;
+                            color: $color-none;
                         }
 
+                    }
+                }
+            }
+            .arive{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .body_arive{
+                    width: $width-body-arive;
+                    .arive_content{
+                        .plane_arive, .sea_arive{
+                            margin-top: $m-2;
+                            background-color: #e5e5e5;
+                            background-image: url('https://easyxpress.com.ua/img/avia-bg.png');
+                            border-radius: $r-2;
+                            background-repeat: no-repeat;
+                            background-position: 100% 0;
+                            background-size: $b-s-2;
+                            padding: $p-3;
+                            position: relative;
+                            h2{
+                                color: black;
+                                padding: $p-0;
+                            }
+                            .plane_conteiner, .sea_conteiner{
+                                margin-top: $m-2;
+                                display: flex;
+                                font-display: column;
+                                justify-content: space-between;
+                                .plane_conteiner_content, .sea_conteiner_content{
+                                    font-size: large;
+                                    width: $width-arive-content
+                                }
+                            }
+                        }
                     }
                 }
             }
