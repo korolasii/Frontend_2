@@ -25,7 +25,9 @@ h2 {
 }
 
 .prev header {
-  height: 200px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 250px;
+          flex: 0 0 250px;
   background: #050505;
   display: -ms-grid;
   display: grid;
@@ -90,6 +92,14 @@ h2 {
   -ms-grid-column: 4;
       grid-column-start: 4;
   grid-column-end: 5;
+}
+
+.prev header .logo_picture .logo_pict {
+  display: none;
+}
+
+.prev header .dropdown {
+  display: none;
 }
 
 .prev .content {
@@ -170,6 +180,9 @@ h2 {
   padding: 20px 0px;
   font-size: 20px;
   color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
 }
 
 .prev .content .body_content .arive {
@@ -218,6 +231,32 @@ h2 {
 .prev .content .body_content .arive .body_arive .arive_content .plane_arive .plane_conteiner .plane_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .plane_arive .plane_conteiner .sea_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .plane_arive .sea_conteiner .plane_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .plane_arive .sea_conteiner .sea_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .sea_arive .plane_conteiner .plane_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .sea_arive .plane_conteiner .sea_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .sea_arive .sea_conteiner .plane_conteiner_content, .prev .content .body_content .arive .body_arive .arive_content .sea_arive .sea_conteiner .sea_conteiner_content {
   font-size: large;
   width: 30%;
+}
+
+.prev .content .body_content #shop h2 {
+  margin-bottom: 30px;
+}
+
+.prev .content .body_content #shop .shop_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+}
+
+.prev .content .body_content #shop .shop_grid .div {
+  background: #ffffff;
+  padding: 20px;
+}
+
+.prev .content .body_content #shop .shop_grid .div img {
+  width: 100%;
+  height: 100%;
 }
 
 .prev footer {
@@ -310,5 +349,123 @@ h2 {
 .prev footer .footer_flex .page .telegram {
   width: 35px;
   height: 32px;
+}
+
+@media (max-width: 1230px) {
+  .prev header .cont {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .prev .content .body_content #steps .conteiner_step {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .prev .content .body_content #steps .conteiner_step .step {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-bottom: 20px;
+  }
+  .prev .content .body_content #steps .conteiner_step .step h2 {
+    padding: 10px 0px 0px 10px;
+  }
+  .prev .content .body_content #steps .conteiner_step .step div {
+    padding: 10px 0px 20px 10px;
+  }
+}
+
+@media (max-width: 960px) {
+  .prev .content .body_content .arive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .prev .content .body_content .arive .body_arive {
+    width: 100%;
+  }
+  .prev .content .body_content .arive .body_arive .arive_content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 765px) {
+  .prev header {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+            flex: 0 0 50px;
+    padding: 0px;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .prev header .logo {
+    display: none;
+  }
+  .prev header .slogo {
+    display: none;
+  }
+  .prev header .logo_picture {
+    width: 100%;
+  }
+  .prev header .logo_picture .world {
+    display: none;
+  }
+  .prev header .logo_picture .logo_pict {
+    padding: 10px;
+    display: block;
+    width: 126px;
+    height: 50px;
+  }
+  .prev header .dropdown {
+    position: relative;
+    display: block;
+  }
+  .prev header .dropdown .dropbtn {
+    background-color: black;
+    padding: 10px;
+    border: none;
+  }
+  .prev header .dropdown .dropbtn .bi-list {
+    font-size: 25px;
+    color: white;
+  }
+  .prev header .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 20px;
+    background-color: rgba(250, 250, 250, 0.8);
+    width: 100px;
+    z-index: 1;
+  }
+  .prev header .dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .prev header .dropdown .dropdown-content a:hover {
+    background-color: rgba(187, 187, 187, 0.932);
+  }
+  .prev header .dropdown .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .prev .content {
+    margin-top: 122px;
+  }
+  .prev .content .navigation {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
