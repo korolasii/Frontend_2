@@ -77,9 +77,13 @@ h2{
             .navigation_menu{
                 display: flex;
                 flex-direction: column;
+                position: sticky;
+                top: 20px;
                 a{
-                    color: $color-none;
+                    color: $color-h2;
                     text-decoration: none;
+                    font-size: $size-step-h2;
+                    margin-bottom: $m-2;
                 }
             }
         }
@@ -224,7 +228,7 @@ h2{
                 align-items: center;
                 height: $height-pol;
                 .viber{
-                    width: 35px;
+                    width: 45px;
                     height: 35px;
                     padding-left: $m-1;
                 }
