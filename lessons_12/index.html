@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ConteinerGrid">
+        <div class="HomeWork">
+            <form id="form_1">
+                <div class="hom1">
+                    <p>Завданя 1</p>
+                    <p>Після натискання на кнопку змінюється текст в інпуті</p>
+                </div>
+                <input type="text" value="Добрий день" name="homework1" id="input" readonly>
+                <input type="submit" value="Натисни щоб змінити текст" id="btn_1" class="btn">
+            </form>
+            <form id="form_2">
+                <div class="hom2">
+                    <p>Завданя 2</p>
+                    <p>Після натискання на кнопку виводить alert вміст інпуту</p>
+                </div>
+                <input type="text" id="alert" value="Привет">
+                <input type="submit" value="Натисни щоб вивести текст" id="btn_2" class="btn">
+            </form>
+        </div>
+        <div class="ConteinerOne">
+            <input type="submit" value="Домашне завадання перше" id="HomeWorkOne" class="btn">
+        </div>
+        <div class="ConteinerTwo">
+            <input type="submit" value="Домашне завадання друге" id="HomeWorkTwo" class="btn">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
