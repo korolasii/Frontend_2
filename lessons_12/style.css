@@ -99,20 +99,57 @@ body{
     border-radius: 55px;
 }
 
-.btn{
+.btn, #close{
     transition: .2s ease-in-out;
     text-shadow: 0 -1px 2px rgba(0,0,0,.2);
     background: linear-gradient(rgb(220 220 220), rgb(187 187 187), rgb(160 160 160));
     box-shadow:  0 1px rgba(255,255,255,.2) inset, 0 0 1px 1px rgba(0,1,6,.2);;
 }
 
-.btn:hover{
+.btn:hover , #close:hover{
     background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
 }
-.btn:active {
+.btn:active, #close:active {
     top: 1px;
     background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
     box-shadow: 0 0 1px rgba(0,0,0,.5) inset, 0 2px 3px rgba(0,0,0,.5) inset, 0 1px 1px rgba(255,255,255,.1);
+}
+
+#mypopup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb( 201, 199, 199, 0.7);
+}
+
+#popup{
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0%);
+    background: #eee;
+    padding: 30px 20px;
+    width: 485px;
+    height: 400px;
+    text-align: center;
+    animation-name: output;
+    animation-duration: 2s;
+}
+
+#outpup{
+    margin-top: 20%;
+}
+
+#close{
+    width: 80%;
+    height: 45px;
+    border-radius: 25px;
+    margin-top: 20%;
 }
 
 @keyframes form {
@@ -122,6 +159,16 @@ body{
 
     to{
         transform: translateX(0px);
+    }
+}
+
+@keyframes output{
+    from{
+        transform: translateY(-1000px);
+    }
+
+    to{
+        transform: translate(-50%, 0%);
     }
 }
 

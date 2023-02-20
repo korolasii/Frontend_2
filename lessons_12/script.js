@@ -4,7 +4,10 @@ btn_HomeWorkTwo = document.getElementById('HomeWorkTwo'),
 formOne = document.getElementById('form_1'),
 formTwo = document.getElementById('form_2'),
 smen = document.getElementById('input'),
-btn_2 = document.getElementById('btn_2');
+btn_2 = document.getElementById('btn_2'),
+popup = document.getElementById('mypopup'),
+output = document.getElementById('outpup'),
+closePopup = document.getElementById('close');
 
 btn_HomeWorkOne.addEventListener('click', (e) => {
     e.preventDefault();
@@ -25,9 +28,15 @@ btn_1.addEventListener('click', (e) => {
 
 btn_2.addEventListener('click', (e) => {
     e.preventDefault();
-    const pop = document.getElementById('alert').value
-    alert(`${pop}`);
+    const pop = document.getElementById('alert').value;
+    popup.style.display = 'block';
+    output.innerHTML = pop;
 });
+
+closePopup.addEventListener('click', (e) => {
+    e.preventDefault();
+    popup.style.display = 'none';
+})
 
 function getRandom(min, max){
     return Math.floor(Math.random()*(max-min+1))+min;
