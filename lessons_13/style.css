@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.lesson{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.grid_conteiner{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+}
+
+h1{
+    font-size: 25px;
+}
+
+.conteiner_homework{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+#addHtmlt{
+    margin-top: 20px;
+}
+
+.new_elemt{
+    font-size: 25px;
+}
+
+.btn_homework, .homework{
+    width: 90%;
+    height: 70px;
+}
+
+.btn_homework{
+    height: 65px;
+    border-radius: 35px;
+}
+
+.btn_homework{
+    text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+    background: linear-gradient(rgb(220 220 220), rgb(187 187 187), rgb(160 160 160));
+    box-shadow:  0 1px rgba(255,255,255,.2) inset, 0 0 1px 1px rgba(0,1,6,.2);;
+}
+
+.btn_homework:hover{
+    background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+}
+.btn_homework:active{
+    top: 1px;
+    background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+    box-shadow: 0 0 1px rgba(0,0,0,.5) inset, 0 2px 3px rgba(0,0,0,.5) inset, 0 1px 1px rgba(255,255,255,.1);
+}
+
+.conteiner_return{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#return{
+    width: 70%;
+}
+
+.addClass {
+    background: #f66668;
+    border-radius: 50% 0 50% 0;
+    width: 200px;
+    height: 120px;
+    line-height: 80px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 500px){
+    .grid_conteiner{
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(8, 150px);
+    }
+}
