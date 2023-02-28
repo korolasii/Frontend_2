@@ -7,17 +7,28 @@ body {
 
 .container {
     position: absolute;
+<<<<<<< HEAD
+    height: autos;
+=======
     height: auto;
+>>>>>>> 3d5581719172673c8bf386053ce3291754cb3686
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     display: grid;
+<<<<<<< HEAD
+    grid-gap: 10px;
+    padding: 4px;
+    border-radius: 5px;
+    max-width: 360px;
+=======
     grid-gap: 5px;
     padding: 4px;
     border-radius: 5px;
     width: 350px;
+>>>>>>> 3d5581719172673c8bf386053ce3291754cb3686
     background-color: #eee;
 }
 
@@ -26,7 +37,11 @@ body {
     padding: 20px;
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
+    border-radius: 10px;
+=======
     border-radius: 5px;
+>>>>>>> 3d5581719172673c8bf386053ce3291754cb3686
     align-items: center;
     font-size: 22px;
     cursor: pointer;
@@ -34,7 +49,11 @@ body {
     background: white;
     transition: .2s ease-in-out;
     text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+<<<<<<< HEAD
+    background: linear-gradient(rgb(165 166 169), rgb(107 107 114), rgb(110,112,120));
+=======
     background: linear-gradient(rgb(220 220 220), rgb(187 187 187), rgb(160 160 160));
+>>>>>>> 3d5581719172673c8bf386053ce3291754cb3686
     box-shadow:  0 1px rgba(255,255,255,.2) inset, 0 0 1px 1px rgba(0,1,6,.2);;
 }
 
@@ -51,7 +70,11 @@ form {
 }
 
 input {
+<<<<<<< HEAD
+    border-radius: 10px;
+=======
     border-radius: 2px;
+>>>>>>> 3d5581719172673c8bf386053ce3291754cb3686
     width: 99%;
     height: 60px;
     border: none;
@@ -60,6 +83,10 @@ input {
     text-align: right;
 }
 
+<<<<<<< HEAD
+.input {
+    box-shadow: 0 0 #eee;
+=======
 .input{
     background: #eee;
     box-shadow: 0 0 0;
@@ -69,15 +96,25 @@ input {
 .result, .maths {
     box-shadow: 0 0 #eee;
     background: #eee;
+>>>>>>> 3d5581719172673c8bf386053ce3291754cb3686
     grid-column: 1/-1;
     padding: 0;
 }   
 
+<<<<<<< HEAD
+.input:active {
+=======
 .result:active, .maths:active {
+>>>>>>> 3d5581719172673c8bf386053ce3291754cb3686
     box-shadow: 0 0px #eee;
     transform: translateY(0px);
 }
 
+<<<<<<< HEAD
+.clean {
+    grid-column: 1/3;
+    background-color: yellow;
+=======
 .input:hover{
     background: #eee;
   }
@@ -89,6 +126,7 @@ input {
 
 .clean {
     grid-column: 1/3;
+>>>>>>> 3d5581719172673c8bf386053ce3291754cb3686
 }
 
 .back {
@@ -98,6 +136,10 @@ input {
 .equal {
     grid-column: 4;
     grid-row: 6/8;
+<<<<<<< HEAD
+    background-color: yellow;
+=======
+>>>>>>> 3d5581719172673c8bf386053ce3291754cb3686
 }
 
 .zero {

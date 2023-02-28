@@ -1,5 +1,8 @@
+<<<<<<< HEAD
+=======
 console.warn('Методы строк')
 
+>>>>>>> dbd43e81a29cc014a3c98547a5354da533b5dd61
 // Соеденение строк '+'
 let str_hellow = 'Hello';
 let str_none = ' ';
@@ -88,7 +91,12 @@ console.log(str_substr.substr(0,11))
 console.log(str_substr.substr(1))
 console.log(str_substr.substr(-2 , 5))
 
+<<<<<<< HEAD
+
+
+=======
 // eval выполняет все матиматические уровнения записанные в строке
 let str_mat = '2+2*2', str_mat_2 = '(2+2)*2';
 console.log(eval(str_mat))
 console.log(eval(str_mat_2))
+>>>>>>> dbd43e81a29cc014a3c98547a5354da533b5dd61
