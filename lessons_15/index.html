@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
 <body>
     <div class="conteiner">
@@ -14,41 +15,46 @@
                 <h1 class="head">
                     Ведіть сфої данні
                 </h1>
-                <form>
-                    <div>
-                        <label for="name">Ім'я</label><br>
-                        <div class="conteinerInput">
-                            <input type="text" id="name">
-                        </div>
+                <div>
+                    <label for="name">Ім'я</label>
+                    <div class="conteinerInput">
+                        <input type="text" id="name" name="name">
                     </div>
-                    <div>
-                        <label for="age">Вік</label><br>
-                        <div class="conteinerInput">
-                            <input type="text" id="age">
-                        </div>
+                </div>
+                <div>
+                    <label for="age">Вік</label>
+                    <div class="conteinerInput">
+                        <input type="text" id="age" name="age">
                     </div>
-                    <button class="btn" id="btnForm">Зберігти дані</button>
-                </form>
+                </div>
+                <div>
+                    <label class="hide"></label>
+                    <div class="conteinerInput">
+                        <button class="btn" id="btnForm">Зберігти дані</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content_2">
             <table class="table_contact">
                 <thead>
                     <tr>
-                        <th>
+                        <th class="tableName">
                             Ім'я
                         </th>
-                        <th>
+                        <th class="tableAge">
                             Вік
                         </th>
-                        <th>
+                        <th class="tableDeleteRow">
                             Видалити ряд
                         </th>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody id="tableContactBody">
+                </tbody>
             </table>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
