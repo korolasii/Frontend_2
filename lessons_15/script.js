@@ -5,9 +5,14 @@ $('#btnForm').click( function() {
     FormAge = document.getElementById('age').value,
     TableContactBody = $('#tableContactBody');
 
-    document.cookie = `name=${FormName}`;
-    document.cookie = `age=${FormAge}`;
+    cookieAddName(FormName)
+    cookieAddAge(FormAge)
 
+    ifinput(FormName, FormAge, TableContactBody)
+    
+});
+
+function ifinput(FormName, FormAge, TableContactBody){
     if (FormName !== ''){
         if(FormAge !== ''){
             if(Number(FormAge) > 0){
@@ -24,7 +29,17 @@ $('#btnForm').click( function() {
     }else{
         alert("Введіть ім'я")
     }
-});
+}
+
+//Создаю фаил куки name
+function cookieAddName(FormName) {
+    document.cookie = `name=${FormName}`;
+}
+
+//Создаю фаил куки age
+function cookieAddAge(FormAge) {
+    document.cookie = `age=${FormAge}`;
+}
 
 //Удаление определеной строки
 function deleterow(idbtn) {
