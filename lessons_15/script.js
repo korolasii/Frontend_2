@@ -57,6 +57,7 @@ function asincnage(){
     return document.cookie.match(/age=(.+?)(;|$)/)[1]
 }
 
+//Создаю и добавляю колонку в таблицу 
 function addTableRow(TableContactBody){
     return $(TableContactBody).append(`<tr class=${id}><th>${asincname()}</th><th>${asincnage()}</th><th><button class='btn' id=${id} style='margin:10px' onclick="deleterow(${id})">Видалити</button></th></tr>`);
 }
