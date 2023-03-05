@@ -170,16 +170,18 @@ class workWithForm{
         $.each(spisok, function (i, item) { 
 
             if (item.id === 'name'){
-                str += '<p style="margin-bottom:10px">Не коректний від у полі Ім`я</p>'
+                str += '<p style="margin-bottom:10px">Не коректний ввід у полі Ім`я</p>'
             }
             if (item.id === 'age'){
-                str += '<p style="margin-bottom:10px">Не коректний від у полі Рік</p>'
+                str += '<p style="margin-bottom:10px">Не коректний ввід у полі Рік</p>'
             }
             if (item.id === 'emeil'){
-                str += '<p>Не коректний від у полі Пошта</p>'
+                str += '<p style="margin-bottom:10px">Не коректний ввід у полі Пошта</p>'
             }
 
         });
+
+        str += '<div class="btn_conteiner"><button class="btn_close btn">Закрити</button></div>'
 
         let popupContent = workWithForm.popupGet()[1],
         myPopup = workWithForm.popupGet()[0];
@@ -187,6 +189,14 @@ class workWithForm{
         $(popupContent).append(str);
         
         $(myPopup).css('display', 'block');
+
+    }
+
+    static _errorClear(){
+
+        let popupContent = workWithForm.popupGet()[1];
+
+        $(popupContent).html('');
 
     }
     
@@ -253,6 +263,16 @@ $('#tableContactBody').click(function (e) {
 
     workWithLocalStorage.removeElement(e.target.parentElement.previousElementSibling.textContent);
 
+});
+
+$(document).on("click", ".btn_close", function() {
+
+    let popup = workWithForm.popupGet()[0]
+
+    $(popup).css('display', 'none');
+
+    workWithForm._errorClear()
+    
 });
 
 document.addEventListener('DOMContentLoaded', workWithLocalStorage.creat($('#tableContactBody')));
