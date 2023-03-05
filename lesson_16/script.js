@@ -141,8 +141,6 @@ class workWithForm{
             
         }
 
-        console.log(document.getElementsByClassName('_error'))
-
         return error
 
     }
@@ -152,6 +150,44 @@ class workWithForm{
         let re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
         
         return re.test(String(email).toLowerCase());
+    }
+
+    static popupGet(){
+
+        let myPopup = document.getElementsByClassName('mypopup'),
+        popupContent = document.getElementsByClassName('contentPopup'),
+        spisok = [myPopup, popupContent];
+
+        return spisok
+
+    }
+
+    static _error() {
+
+        let spisok = document.getElementsByClassName('_error'),
+        str = ``
+
+        $.each(spisok, function (i, item) { 
+
+            if (item.id === 'name'){
+                str += '<p style="margin-bottom:10px">Не коректний від у полі Ім`я</p>'
+            }
+            if (item.id === 'age'){
+                str += '<p style="margin-bottom:10px">Не коректний від у полі Рік</p>'
+            }
+            if (item.id === 'emeil'){
+                str += '<p>Не коректний від у полі Пошта</p>'
+            }
+
+        });
+
+        let popupContent = workWithForm.popupGet()[1],
+        myPopup = workWithForm.popupGet()[0];
+
+        $(popupContent).append(str);
+        
+        $(myPopup).css('display', 'block');
+
     }
     
 }
@@ -199,6 +235,10 @@ $('#btnForm').click(function () {
         workWithForm.clear()////Call a function clear in class workWithForm
 
         workWithTable.addRow(TableContactBody)
+
+    }else{
+
+        workWithForm._error()
 
     }
 
