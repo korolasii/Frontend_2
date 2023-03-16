@@ -43,6 +43,7 @@ function cookieAddAge(FormAge) {
 
 //Удаление определеной строки
 function deleterow(idbtn) {
+    console.log($(`.${idbtn}`))
     $(`.${idbtn}`).remove();
 }
 

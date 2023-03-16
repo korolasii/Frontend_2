@@ -1,104 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-size: 30px;
-}
-
-body{
-    background: #888585e0;
-}
-
-h1{
-    text-align: center;
-    font-size: 40px;
-    color: #edb169;
-}
-
 .conteiner{
-    width: 100%;
-    height: 100vh;
-}
-
-.content_1{
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.formConteiner{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 545px;
-    height: 480px;
-    border-radius: 24px;
-    background-color: #302e2eaf;
-}
-
-.formConteiner div{
-    display: flex;
-    align-items: center;
-    width: 85%;
-}
-
-label{
-    margin-left: 20px;
-    width: 50px;
-    color: #edb169;
-}
-
-.conteinerInput{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-input{
-    width: 80%;
-    height: 20px;
-    padding: 10px;
-    border-radius: 24px;
-    text-align: center;
-}
-
-.btn{
-    width: 85%;
-    height: 45px;
+    width: 100px;
+    height: 100px;
     border-radius: 25px;
-    transition: .2s ease-in-out;
-    text-shadow: 0 -1px 2px rgba(0,0,0,.2);
-    background: linear-gradient(rgb(220 220 220), rgb(187 187 187), rgb(160 160 160));
-    box-shadow:  0 1px rgba(255,255,255,.2) inset, 0 0 1px 1px rgba(0,1,6,.2);;
+    overflow: hidden;
 }
 
-.btn:hover{
-    background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
-}
-.btn:active{
-    top: 1px;
-    background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
-    box-shadow: 0 0 1px rgba(0,0,0,.5) inset, 0 2px 3px rgba(0,0,0,.5) inset, 0 1px 1px rgba(255,255,255,.1);
-}
-
-.content_2{
-    padding-bottom: 20px;
+.contentDiv{
     width: 100%;
-}
-
-.table_contact{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.tableName, .tableAge, .tableDeleteRow{
-    width: 33%;
-}
-
-th, td{
-    border: 2px solid black;
-    text-align: center;
+    height: 100%;
+    border: 5px solid;
+    border-image: -moz-linear-gradient(to top, #000 10%, blue 50%)1% 1;
+    border-image: -webkit-linear-gradient(to top, #000 10%, blue 50%)1% 1;
+    border-image: linear-gradient(to top, #000 10%, blue 50%)1% 1;
 }
