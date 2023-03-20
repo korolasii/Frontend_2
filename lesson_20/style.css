@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.h{
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    color: #eee;
+    font-size: 40px;
+    user-select: none;
+}
+
+#search{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 30px;
+}
+
+#searchText, .btnSearch, #btnClose, #Wie{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.btnSearch{
+    width: 50px;
+    height: 34px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.imgSearch{
+    background-color: aliceblue;
+}
+
+.films{
+    margin-top: 30px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    column-gap: 10px;
+}
+
+.film{
+    width: 100%;
+    margin-top: 30px;
+    height: 350px;
+    overflow: hidden;
+}
+
+img{
+    height: 100%;
+}
+
+.filmActive{
+    overflow: visible;
+}
+
+.filmsAbout{
+    margin-top: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.ulFilm{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ulFilm div {
+    margin-bottom: 10px;
+}
+
+.AboutFilmText{
+    height: 100%;
+    width: 60%;
+}
+
+.AboutFilmText h2{
+    margin-bottom: 10px;
+}
+
+.AboutFilmText p {
+    margin-bottom: 40px;
+}
+
+.conteinerBtnWie{
+    display: flex;
+    justify-content: center;
+}
+
+#Wie{
+    background-color: #eee;
+    color: black;
+    width: 250px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    text-decoration: none;
+}
+
+.popup{
+    user-select: none;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup_content{
+    position: relative; 
+    background-color: white;
+    margin: auto;
+    margin-top: 155px;
+    border: 1px solid #888;
+    width: 500px;
+    padding: 35px;
+    border-radius: 25px;
+    font-family: "Century Gothic";
+    letter-spacing: 1px;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.popupText{
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.popupBtn{
+    display: flex;
+    justify-content: center;
+}
+
+#btnClose{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	border: none;
+    height: 50px;
+	border-radius: 25px;
+    width: 60%;
+	color: #fff;
+	background-color: #000;
+	font-family: "Century Gothic";
+	outline: none;
+	cursor: pointer;
+}
+
+@keyframes animatetop {
+    from {
+        transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}

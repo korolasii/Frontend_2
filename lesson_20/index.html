@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="h">Search Film</div>
+        <form id="search">
+            <input type="text" class="form-control" id="searchText" placeholder="Search">
+            <div class="btnSearch"><img src="search.png" class="imgSearch"></div>
+        </form>
+        <div class="films"></div>
+        <div class="filmsAbout">
+        </div>
+    </div>
+    <div class="popup" id="mypopup">
+        <div class="popup_content">
+            <div class="popupText">
+                По вашему запросу ничего не найдено
+            </div>
+            <div class="popupBtn">
+                <div id="btnClose">Закрить</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
