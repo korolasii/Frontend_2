@@ -1,0 +1,133 @@
+@import 'per';
+
+*{
+    margin: $m-0;
+    padding: $p-0;
+}
+
+img{
+    user-select: none;
+}
+
+.page{
+    width: $w-100;
+    height: $h-100d;
+    .header{
+        display: flex;
+        justify-content: space-around;
+        width: $w-100;
+        padding: $p-2 $p-0;
+        .logo{
+            width: $w-33;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .slogo{
+                margin-left: $m-1;
+                font-weight: $fw-bold;
+                font-size: $fz-2;
+            }
+        }
+        .nav{
+            width: $w-33;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            div{
+                a{
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+        .sign{
+            user-select: none;
+            width: $w-33;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .signIn{
+                margin-right: $m-5;
+                cursor: pointer;
+                font-weight: $fw-bold;
+            }
+            .signUp{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 45px;
+                color: $color-sign-up;
+                border: 1px solid $color-sign-up;
+                border-radius: 25px;
+                cursor: pointer;
+                font-weight: $fw-bold;
+            }
+        }
+    }
+    .easyWithLaslesVPN{
+        display: flex;
+        justify-content: space-evenly;
+        .text{
+            width: $w-40;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1{
+                font-size: 50px;
+                line-height: 70px;
+            }
+            p{
+                margin-top: $m-3;
+                line-height: 30px;
+            }
+            button{
+                user-select: none;
+                background-color: $bg-color-btn-on;
+                border:1px solid $bg-color-btn-on;
+                border-radius: 25px;
+                width: 250px;
+                height: 60px;
+                color: white;
+                margin-top: $m-5;
+                box-shadow: 8px 14px 13px 0px rgba(245, 56, 56, 0.35);
+            }
+            button:hover{
+                background-color: #ff0808;
+            }
+            button:active {
+                transform: translate(8px, 14px);
+                box-shadow: inset 0px 1px 1px black, 
+                inset 4px 6px 5px rgba(0, 0, 0, 0.3), 
+                inset -1px 1px 5px rgba(255, 255, 255, 0.5);
+                transition: transform 0.15s;
+                transform-style: preserve-3d;
+        }   }
+        .img{
+            width: $w-40;
+        }
+    }
+    .aboutLaslesVPN{
+        margin: $m-5 auto $m-0 auto;
+        padding: $p-2;
+        display: flex;
+        justify-content: space-evenly;
+        width: $w-80;
+        box-shadow: 3px 10px 17px 0px rgb(225 221 221);
+        div{
+            display: flex;
+            align-items: center;
+        }
+        .usersText, .locationsText, .serversText {
+            display: flex;
+            flex-direction: column;
+            margin-left: $m-2;
+            .num{
+                font-weight: 700; 
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+    }
+}
